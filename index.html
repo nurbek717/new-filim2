@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/bootstrap.css"> 
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container" id="div" >
+		
+	<img class="filim__img" src="./photo_2021-12-16_15-21-59.jpg" alt="filim" width="500" height="500">
+	
+	<form id="form" class="d-flex justify-content-center" action="" method="GET">
+		<input id="inputname" type="text" class="form__input form-control input-group bg-secondary
+		text-light mt-5   fw-bold fs-1" placeholder="kinoni tanlang" aria-label="Username" aria-describedby="basic-addon1">
+		<button  class=" btn btn-primary mt-5 ms-3 fs-1 fw-bold" type="submit" style="width:120px">Button</button>
+	</form>
+	<h2 class="fw-bold fs-1 mt-5" id="title">Sear result: 0</h2>
+
+	<ul id="card_film" class="list  mt-4 me-2 mb-3 p-0 d-flex justify-content-between  "  style="width: 100%;flex-wrap: wrap; ">
+		<img class="" src="./Radio-1s-200px.svg" alt="" width="500px" height="500px" style="margin: 500px auto;">
+	</ul>  
+
+</div>	
+
+	<template id="post_item_template">
+			<li class="card" style="width: 30%; margin: 15px ;"  >
+				<img class="card-img-bottom card  " src=""   id="moves-img">
+				<h4 class="mt-4 ms-4 text-danger fw-bold " id="moves-title"></h4>
+				<h5 class="mt-4 ms-4 d-blog  fw-bold" id="moves-year"></h5>
+				<h6 class="mt-4 ms-4  fw-bold" id="moves-reting"></h6>
+				<h6 class="fw-bold ms-4 mt-3 text-primary" id="moves-categors"></h6>
+				<div class="pt-4 pb-5 ">
+					<a class="btn btn-outline-primary p-1 ms-3 fs-6" href="" id="moves-youtobe">Watch trailer</a>
+					<button class="btn btn-outline-info btn-sm p-1 ms-2 fs-6">More info</button>
+					<button class="btn btn-outline-success btn-sm p-1 ms-2 fs-6" id="bookmark" >Bookmarks</button>
+				</div>
+			</li>
+	</template>
+	<!-- <script src="./js/bootstrap.js"></script> -->
+	<script src="./js/main.js"></script>
+</body>
+</html>
